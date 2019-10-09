@@ -1,0 +1,49 @@
+.header {
+    background-color: $black;
+    height: 80px;
+
+    &__image {
+        padding-top: 16px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__nav-menu {
+        display: flex;
+        justify-content: center;
+        
+        &-item {
+            list-style: none;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 6px;
+        }
+
+        &-item.active {
+            border-bottom: 4px solid $white;
+        }
+
+        &-item.primary {
+            color: #afafaf;
+        }
+    }
+}
+
+ul  {
+    padding: 0px;
+}
+ 
+a { 
+    text-decoration: none;
+    color: $white;
+    font-family: 'AvenirNextRegular';
+  }
+
+#primary {
+    color: #afafaf;
+}
+
+
+
+
+

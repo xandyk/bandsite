@@ -1,0 +1,46 @@
+.about {
+    font-family: 'AvenirNextBold';
+    padding: 0 16px;
+
+    &__header {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 32px 0 24px;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__quote {
+        font-family: 'AvenirNextMedium';
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__name {
+        font-family: 'AvenirNextRegular';
+        font-size: 14px;
+        padding: 32px, 0, 40px, 0;
+
+    }
+    
+    &__band {
+        font-family: 'AvenirNextMedium';
+        font-size: 24px;
+    }
+}
+
+
+
+
+.content {
+    font-family: 'AvenirNextRegular';
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.content.bottom {
+    margin-bottom: 40px;
+}

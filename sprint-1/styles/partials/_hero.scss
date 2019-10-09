@@ -1,0 +1,25 @@
+.hero * {
+    margin: 0;
+}
+
+.hero {
+    &__image {
+        background-image: url('../assets/images/hero.jpg');
+        position: relative;
+        width: 100vw;
+        height: 183px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__text {
+        color: $white;
+        font-family: 'AvenirNextBold';
+        font-size: 24px;
+        line-height: 32px;
+        position: absolute;
+        top: 30%;
+        padding-left: 16px;
+        }  
+}
+

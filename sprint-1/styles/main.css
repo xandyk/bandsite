@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'AvenirNextRegular';
+  src: url(../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'AvenirNextMedium';
+  src: url(../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf);
+}
+
+@font-face {
+  font-family: 'AvenirNextBold';
+  src: url(../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf);
+}
+
+.header {
+  background-color: #323232;
+  height: 80px;
+}
+
+.header__image {
+  padding-top: 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header__nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__nav-menu-item {
+  list-style: none;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.header__nav-menu-item.active {
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.header__nav-menu-item.primary {
+  color: #afafaf;
+}
+
+ul {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'AvenirNextRegular';
+}
+
+#primary {
+  color: #afafaf;
+}
+
+.footer {
+  color: #FFFFFF;
+  background-color: #323232;
+  font-family: 'AvenirNextBold';
+  padding: 0 16px;
+}
+
+.hero * {
+  margin: 0;
+}
+
+.hero__image {
+  background-image: url("../assets/images/hero.jpg");
+  position: relative;
+  width: 100vw;
+  height: 183px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__text {
+  color: #FFFFFF;
+  font-family: 'AvenirNextBold';
+  font-size: 24px;
+  line-height: 32px;
+  position: absolute;
+  top: 30%;
+  padding-left: 16px;
+}
+
+.about {
+  font-family: 'AvenirNextBold';
+  padding: 0 16px;
+}
+
+.about__header {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 32px 0 24px;
+}
+
+.about__img {
+  width: 100%;
+  height: auto;
+}
+
+.about__quote {
+  font-family: 'AvenirNextMedium';
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.about__name {
+  font-family: 'AvenirNextRegular';
+  font-size: 14px;
+  padding: 32px, 0, 40px, 0;
+}
+
+.about__band {
+  font-family: 'AvenirNextMedium';
+  font-size: 24px;
+}
+
+.content {
+  font-family: 'AvenirNextRegular';
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.content.bottom {
+  margin-bottom: 40px;
+}
+
+.gallery {
+  padding: 0 16px;
+}
+
+.gallery__header {
+  font-family: 'AvenirNextBold';
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.gallery__photo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.footer {
+  color: #FFFFFF;
+  background-color: #323232;
+  font-family: 'AvenirNextBold';
+  padding: 0 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'AvenirNextRegular';
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+/*# sourceMappingURL=main.css.map */
