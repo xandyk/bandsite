@@ -1,13 +1,48 @@
 .footer {
-    color: $white;
-    background-color: $black;
-    font-family: 'AvenirNextBold';
-    // padding: 0 16px;
+  color: $white;
+  background-color: $black;
+  font-family: "AvenirNextBold";
 
-    &__heading {
+  &__heading {
+    font-size: 40px;
+    margin: 0;
+    padding: 40px 0 30px 12px;
+  }
+
+  &__social {
+    padding-left: 16px;
+    display: inline-block;
+    width: 60%;
+
+    &-icon {
+      padding-right: 30px;
     }
+  }
+}
 
-    &__social {
+.representative {
+  font-family: "AvenirNextMedium";
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 12px;
+  font-weight: bolder;
 
-    }
+  &__address,
+  &__email {
+    font-family: "AvenirNextRegular";
+    padding-left: 12px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__email {
+    padding-bottom: 18px;
+  }
+}
+
+.copyright {
+  font-family: "AvenirNextRegular";
+  font-size: 13px;
+  line-height: 18px;
+  padding: 20px 0 50px 12px;
 }

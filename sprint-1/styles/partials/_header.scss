@@ -1,49 +1,120 @@
 .header {
-    background-color: $black;
-    height: 80px;
+  background-color: $black;
+  height: 80px;
 
-    &__image {
-        padding-top: 16px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    &__nav-menu {
-        display: flex;
-        justify-content: center;
-        
-        &-item {
-            list-style: none;
-            width: 50%;
-            text-align: center;
-            padding-bottom: 6px;
-        }
-
-        &-item.active {
-            border-bottom: 4px solid $white;
-        }
-
-        &-item.primary {
-            color: #afafaf;
-        }
-    }
-}
-
-ul  {
-    padding: 0px;
-}
- 
-a { 
-    text-decoration: none;
-    color: $white;
-    font-family: 'AvenirNextRegular';
+  &__image {
+    padding-top: 16px;
+    display: block;
+    margin: 0 auto;
   }
 
-#primary {
+  &__nav-menu {
+    margin: unset;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    // .active {
+    //   border-bottom: 4px solid white;
+    //   padding-bottom: 5px;
+    // }
+    .test {
+      width: 50%;
+      text-align: center;
+      
+    }
+    &-item {
+      list-style: none;
+      width: 50%;
+      text-align: center;
+
+      &-biography {
+      text-align: center;
+      border-bottom: 4px solid $white;
+      width: 50%;
+      padding-bottom: 6px;
+      }
+
+    }
+  }
+
+  &__nav-menu .primary {
+    padding: 0;
     color: #afafaf;
+  }
+}
+
+ul {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-family: "AvenirNextRegular";
 }
 
 
 
 
 
+/* ----- Media Queries: Tablet */
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    
+    &__image {
+      padding: unset;
+      margin: unset;
+      margin-left: 3.125%;
+    }
+
+    &__nav {
+      display:flex;
+      // align-items: center;
+      margin-left: 50px;
+      // height: 24px;
+      padding-top: 20px;
+
+    
+    &-menu-item-biography {
+      padding-bottom: unset;
+
+
+    }
+    &-menu-item-show {
+      padding-left: 30px;
+    }
+    }
+    
+  }
+  .active {
+    padding-bottom: 25px;
+    border-bottom: 5px solid white;
+  }
+}
+
+
+
+/* ----- Media Queries: Desktop */
+
+@media all and (min-width: 1440px) {
+  .header {
+    padding: 0 12.5%;
+
+    &__nav {
+      margin-left: 56px;
+    }
+
+    &__image {
+      margin: 0;
+    }
+  }
+
+  .hero .hero__text {
+    padding-left: unset;
+    margin-left: 0.125%;
+  }
+}
