@@ -11,19 +11,19 @@
 
 <body>
 
-    <!-- Header & Nav bar -->
+<!-- Header & Nav bar -->
     <header class="header">
-        <img class="header__image" src="./assets/logo/Logo-bandsite.png">
+        <img class="header__image" src="./assets/logo/Logo-bandsite.svg">
 
         <nav class="header__nav">
             <ul class="header__nav-menu">
-                <li class="header__nav-menu-item active"><a href="#">Biography</a></li>
-                <li class="header__nav-menu-item"><a id="primary" href="#">Shows</a></li>
+                <li class="header__nav-menu-item-biography test"><a class="active" href="#">Biography</a></li>
+                <li class="header__nav-menu-item-show test"> <a class="primary" href="#">Shows</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Background & Text -->
+<!-- Hero Background & Text -->
     <section class="hero">
         <div class="hero__image">
             <span class="hero__text">Gaspard Auge &<br>Xavier de Rosnay<span>
@@ -115,24 +115,33 @@
         <h1 class="footer__heading">Get In Touch</h1>
 
         <div class="footer__social">
-            <img src="./assets/Icons/SVG/Icon-instagram.svg">
-            <img src="./assets/Icons/SVG/Icon-facebook.svg">
-            <img src="./assets/Icons/SVG/Icon-twitter.svg">
+            <img class="footer__social-icon" src="./assets/Icons/SVG/Icon-instagram.svg">
+            <img class="footer__social-icon"src="./assets/Icons/SVG/Icon-facebook.svg">
+            <img class="footer__social-icon"src="./assets/Icons/SVG/Icon-twitter.svg">
         </div>
 
-        <h2>Richard Rovner<br>
-        The Bees Knees Management</h2>
-            <p>460 King Street West
-            Toronto, Ontario M5V 1L7</p>
+        <h4 class="representative">Richard Rovner<br>
+        The Bees Knees Management</h4>
+            <h4 class="representative__address">460 King Street West<br>Toronto, Ontario M5V 1L7</h4>
 
-        <span>info@thebeesknees.com</span>
+        <h4 class="representative__email">info@thebeesknees.com</h4>
 
-        <h2>Marsha Vlasic<br>
+        <h2 class="representative">Marsha Vlasic<br>
         Artist Group International</h2>
-            <p>460 King Street West<br>
-            Toronto, Ontario M5V 1L7</p>
+            <h4 class="representative__address">460 King Street West<br>
+            Toronto, Ontario M5V 1L7</h4>
 
+            <span class="representative__email">marsha.vlasic@artistgrp.com</span>
 
+        <h2 class="representative">Russel Warby<br>William Morrir Entertainment<br>
+            Booking Agent for
+            UK / EU / AU</h2>
+        <h4 class="representative__address">460 King Street West<br>
+            Toronto, Ontario M5V 1L7</h4>
+        
+        <span class="representative__email">RLW@wmeentertainment.com</span>
+
+        <h4 class="copyright">Copyright The Bees Knees © 2018<br>All Rights Reserved</h4>
 
 
     </footer>

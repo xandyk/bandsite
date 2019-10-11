@@ -7,7 +7,7 @@
         background-image: url('../assets/images/hero.jpg');
         position: relative;
         width: 100vw;
-        min-height: 183px;
+        height: 183px;
         background-position: center;
         background-size: cover;
     }
@@ -19,7 +19,26 @@
         line-height: 32px;
         position: absolute;
         top: 30%;
-        padding-left: 16px;
+        padding-left: 5%;
         }  
 }
 
+/* ----- Media Queries: Tablet */
+
+@media all and (min-width: 768px) {
+    .hero {
+        &__text {
+            padding-left: 3.125%;
+        }
+    }
+}
+
+/* ----- Media Queries: Desktop */
+
+@media all and (min-width: 768px) {
+     .hero {
+        &__text {
+            padding-left: 12.5%;
+        }
+    }
+}
