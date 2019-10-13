@@ -1,20 +1,44 @@
 .gallery {
-  padding: 0 16px;
+  padding: 0 5%;
+  background-color: $alabaster;
 
-  &__photo {
-    width: 100%;
-    height: 162px;
-  }
   &__header {
     font-family: "AvenirNextBold";
     font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 24px;
+    margin: 0;
+    padding: 32px 0 24px;
   }
 
-  &__photo {
-    width: 100%;
-    height: auto;
-    margin-bottom: 16px;
+  &__container {
+    &-photo {
+      width: 288px;
+      height: 162px;
+      padding-bottom: 16px;
+    }
   }
 }
+
+
+/* ----- Media Queries: Tablet ----- */
+
+@media all and (min-width: 768px) {
+
+// .gallery {
+
+//   &__header {
+//     font-family: "AvenirNextBold";
+//     font-size: 30px;
+//     padding: 32px 0 36px;
+//   }
+
+//   &__container {
+
+//     &-photo {
+//       width: 31.112%;
+//       height: 145px;
+//       padding-bottom: 16px;
+//     }
+//   }
+
+// }
+// }

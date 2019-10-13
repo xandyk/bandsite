@@ -1,45 +1,52 @@
 .about {
     font-family: 'AvenirNextBold';
-    padding: 0 16px;
+    padding-left: 5%;
+    padding-right: 5%;
 
     &__header {
-        font-size: 24px;
+        display: inline-block;
+        font-size: 20px;
         line-height: 32px;
-        margin: 32px 0 24px;
     }
 
     &__img {
         width: 100%;
-        min-height: auto;
+        height: auto;
     }
 
     &__quote {
+        margin: 0;
+        padding: 24px 0 32px 0;
         font-family: 'AvenirNextMedium';
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     &__name {
-        font-family: 'AvenirNextRegular';
-        font-size: 14px;
-        padding: 32px, 0, 40px, 0;
-
+        margin: 0;
+        padding-bottom: 40px;
+        font-family: 'AvenirNextMedium';
+        font-size: 11px;
     }
     
     &__band {
+        margin: 0;
+        padding-bottom: 24px;
         font-family: 'AvenirNextMedium';
-        font-size: 24px;
+        font-size: 16px;
     }
 }
 
 .content {
+    margin: 0 0 20px 0;
     font-family: 'AvenirNextRegular';
     font-size: 13px;
     line-height: 18px;
 }
 
 .content.bottom {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
 }
 
 /* ----- Media Queries: Tablet */
@@ -53,24 +60,28 @@
             margin: 44px 0 32px;
         }
 
+        &__img {
+            height: 362px;
+            padding-right: unset;
+        }
+
         &__quote {
             font-family: 'AvenirNextBold';
             font-size: 26px;
             line-height: 38px;
+            padding-top: 32px;
         }
 
         &__name {
             font-family: 'AvenirNextRegular';
-            font-size: 18px;
+            font-size: 22px;
             line-height: 38px;
-            padding-bottom: 30px;
         }
 
         &__band {
             font-family: 'AvenirNextBold';
             font-size: 24px;
         }
-
     }
 
     .container {
@@ -82,15 +93,63 @@
         padding-right: 3.125%;
         font-size: 16px;
         line-height: 1.5;
-        }
+    }
     
     .container .content.bottom {
         padding-right: 0;
     }
 }
 
-/* ----- Media Queries: Desktop */
+/* ----- Media Queries: Desktop ----- */
 
 @media all and (min-width: 1440px) {
+    .about {
+        padding: unset;
+        
+        &__header {
+            margin: 48px 0 48px 12.5%;
+        }
+
+        &__img {
+            height: 450px;
+            width: 62.22%;
+            margin: 0 18.89% 48px 18.9%;
+        }
+
+        &__quote {
+            padding: 0 18.9% 40px 18.9%;
+            font-size: 26px;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 38px;
+            padding: 0 18.9% 56px 18.9%;
+        }
+
+        &__band {
+            font-family: 'AvenirNextBold';
+            font-size: 24px;
+            padding: 0 18.9% 32px 18.9%;
+        }
+
+   
+
+    .container .content {
+        font-family:'AvenirNextRegular';
+        padding: 0 20px 48px 18.9%;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 0;
+        }
+    
+    .container .content.bottom {
+        font-family:'AvenirNextRegular';
+        padding: 0 18.9% 48px 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        }
+
+    }
     
 }
