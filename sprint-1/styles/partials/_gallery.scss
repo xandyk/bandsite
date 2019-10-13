@@ -9,54 +9,28 @@
     padding: 32px 0 24px 0;
   }
 
-  &__wrap { 
-    &-photo {
-      width: 100%;
-      margin-bottom: 16px;
+  &__wrap {
+    &-photo { 
+      // width: 100%;
+      margin: 0 0 16px 0;
+      }
+  }
+}
+  
+
+/* ----- Media Queries: Tablet ----- */
+
+@include medium {
+  .gallery {
+  padding: 0 3.125%;
+
+  .gallery__wrap {
+     display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
 }
 
 
 
-
-
-/* ----- Media Queries: Tablet ----- */
-@media all and (min-width: 768px) {
-    .gallery {
-      padding: 0 3.125%;
-      &__header {
-
-      }
-
-    }
-
-
-
-
-}
-
-// @include medium {
-//     .gallery {
-//         padding: 0 3.125%;
-//         &__heading {
-//             font-size:24px;
-//             line-height: 32px;
-//        }
-//         &__photos {
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: space-evenly;
-//             padding-bottom:30px;
-//             &-art {
-//                 filter: grayscale(100%);
-//                 transition: all 0.5s;
-//                 &:hover {
-//                     filter: grayscale(0);
-//                }
-//                 width:29.17%;
-//                 height: 16.5vw;
-//            }
-//        }
-//    }
-// }
