@@ -1,0 +1,64 @@
+.gallery {
+  padding: 0 5%;
+  background-color: $mercury;
+
+  &__header {
+    font-family: "AvenirNextBold";
+    font-size: 24px;
+    margin: 0;
+    padding: 32px 0 24px 0;
+  }
+
+  &__photo {
+    width: 100%;
+    padding-bottom: 16px;
+    }
+  }
+
+/* ----- Media Queries: Tablet ----- */
+
+@include medium {
+.gallery {
+  padding: 0 3.125%;
+
+  &__header {
+    font-size: 32px;
+  }
+
+  &__photo {
+    width: 29.1667%;
+    height: 126px;
+    padding-bottom: 16px;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom:30px;
+    }
+  }
+}
+
+@include large {
+    .gallery {
+      padding: 0 12.5%;
+
+        &__header {
+            padding: 48px 0 64px;
+            font-size: 38px;
+            line-height: 44px;
+        }
+
+        &__container {
+            justify-content: space-between;
+            padding-bottom: 40px;
+
+        &__photo {
+            width: 31.85%;
+            padding-bottom: 24px;
+            height: 193px;
+           }
+       }
+   }
+}

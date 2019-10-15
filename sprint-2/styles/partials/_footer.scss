@@ -1,0 +1,104 @@
+.footer {
+  color: $white;
+  background-color: $black;
+  font-family: "AvenirNextBold";
+  padding-left: 5%;
+
+
+  &__heading {
+    font-size: 24px;
+    padding: 40px 0 30px 12px;
+  }
+
+  &__social {
+    padding-left: 5%;
+    padding-bottom: 20px;
+
+    &-icon {
+      padding-right: 6.25%;
+    }
+
+    &-icon.twitter {
+      padding-left: 6.25%;
+    }
+  }
+}
+
+.representative {
+  font-family: "AvenirNextMedium";
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 12px;
+  font-weight: bolder;
+
+  &__address,
+  &__email {
+    font-family: "AvenirNextRegular";
+    padding-left: 12px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__email {
+    padding-bottom: 18px;
+  }
+}
+
+.copyright {
+  font-family: "AvenirNextRegular";
+  font-size: 13px;
+  line-height: 18px;
+  padding: 20px 0 50px 12px;
+}
+
+
+/* ----- Media Queries: Tablet ----- */
+
+@include medium {
+  .footer {
+    &__heading {
+      display: inline-block;
+      padding-left: 0;
+      font-size:30px;
+    }
+
+    &__social {
+      display: inline-block;
+      width: 40%;
+      padding-left: 50px;
+
+        &-icon.twitter {
+      padding-left: 3.91%;
+      }
+    }
+
+    .person-wrap {
+      display: flex;
+    }
+
+    .person {
+    padding-right: 3.125%;
+    }
+  }
+}
+
+
+@include large {
+  .footer {
+
+    padding-left: 12.5%;
+
+    &__social {
+      display: inline-block;
+      width: 40%;
+      padding-left: 50px;
+
+          &-icon {
+      padding-right: 2.22%;
+      }
+
+  .person{
+    padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.header {
+  background-color: $black;
+  width: 100vw;
+  height: 80px;
+
+  &__image {
+    padding: 12px 0 16px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__nav-menu {
+    margin: unset;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    .test {
+      width: 50%;
+      text-align: center;
+    }
+
+    &-item-biography {
+      border-bottom: 4px solid $white;
+      width: 50%;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__nav-menu .primary {
+    color: #afafaf;
+  }
+}
+
+ul {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-family: "AvenirNextRegular";
+}
+
+/* ----- Media Queries: Tablet ----- */
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    
+    &__image {
+      padding: unset;
+      margin: unset;
+      padding-left: 3.125%;
+    }
+
+    &__nav {
+      display:flex;
+      margin-left: 50px;
+      padding-top: 28px;
+
+      &-menu-item-show {
+        padding-left: 30px;
+      }
+    }
+
+    &-menu-item-biography {
+        padding-bottom: unset;
+      }
+    }
+  }
+
+
+
+
+/* ----- Media Queries: Desktop */
+
+@media all and (min-width: 1440px) {
+  .header {
+    // padding-left: 0;
+    // padding: 0 12.5%;
+
+    &__nav {
+      margin-left: 56px;
+    }
+
+    &__image {
+      padding-left: unset;
+      padding-left: 12.5%;
+    }
+  }
+}

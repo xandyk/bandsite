@@ -1,0 +1,467 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "AvenirNextRegular";
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'AvenirNextRegular';
+  src: url(../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'AvenirNextMedium';
+  src: url(../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Medium.otf);
+}
+
+@font-face {
+  font-family: 'AvenirNextBold';
+  src: url(../assets/fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf);
+}
+
+.header {
+  background-color: #323232;
+  width: 100vw;
+  height: 80px;
+}
+
+.header__image {
+  padding: 12px 0 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header__nav-menu {
+  margin: unset;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__nav-menu .test {
+  width: 50%;
+  text-align: center;
+}
+
+.header__nav-menu-item-biography {
+  border-bottom: 4px solid #FFFFFF;
+  width: 50%;
+  padding-bottom: 5px;
+}
+
+.header__nav-menu .primary {
+  color: #afafaf;
+}
+
+ul {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "AvenirNextRegular";
+}
+
+/* ----- Media Queries: Tablet ----- */
+@media all and (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__image {
+    padding: unset;
+    margin: unset;
+    padding-left: 3.125%;
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+    padding-top: 28px;
+  }
+  .header__nav-menu-item-show {
+    padding-left: 30px;
+  }
+  .header-menu-item-biography {
+    padding-bottom: unset;
+  }
+}
+
+/* ----- Media Queries: Desktop */
+@media all and (min-width: 1440px) {
+  .header__nav {
+    margin-left: 56px;
+  }
+  .header__image {
+    padding-left: unset;
+    padding-left: 12.5%;
+  }
+}
+
+.hero * {
+  margin: 0;
+}
+
+.hero__image {
+  background-image: url("../assets/images/hero.jpg");
+  width: 100vw;
+  height: 183px;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__text {
+  color: #FFFFFF;
+  font-family: 'AvenirNextBold';
+  font-size: 20px;
+  line-height: 1.5;
+  padding-left: 5%;
+  display: block;
+  width: 60%;
+}
+
+/* ----- Media Queries: Tablet ----- */
+@media all and (min-width: 768px) {
+  .hero__image {
+    height: 400px;
+  }
+  .hero__text {
+    font-size: 46px;
+    padding-left: unset;
+    margin-left: 3.125%;
+    width: 55%;
+  }
+}
+
+/* ----- Media Queries: Desktop */
+@media all and (min-width: 1440px) {
+  .hero__image {
+    height: 670px;
+  }
+  .hero__text {
+    display: block;
+    width: 40%;
+    padding: unset;
+    font-size: 65px;
+    margin-left: 12.5%;
+  }
+}
+
+.about {
+  font-family: 'AvenirNextBold';
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.about__header {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.about__img {
+  width: 100%;
+  height: auto;
+}
+
+.about__quote {
+  margin: 0;
+  padding: 24px 0 32px 0;
+  font-family: 'AvenirNextMedium';
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.about__name {
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: 'AvenirNextMedium';
+  font-size: 11px;
+}
+
+.about__band {
+  margin: 0;
+  padding-bottom: 24px;
+  font-family: 'AvenirNextMedium';
+  font-size: 16px;
+}
+
+.content {
+  margin: 0 0 20px 0;
+  font-family: 'AvenirNextRegular';
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.content.bottom {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+/* ----- Media Queries: Tablet */
+@media all and (min-width: 768px) {
+  .about {
+    padding: 0 3.125%;
+  }
+  .about__header {
+    font-size: 35px;
+    margin: 44px 0 32px;
+  }
+  .about__img {
+    height: 362px;
+    padding-right: unset;
+  }
+  .about__quote {
+    font-family: 'AvenirNextBold';
+    font-size: 26px;
+    line-height: 38px;
+    padding-top: 32px;
+  }
+  .about__name {
+    font-family: 'AvenirNextRegular';
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .about__band {
+    font-family: 'AvenirNextBold';
+    font-size: 24px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .content {
+    font-family: 'AvenirNextRegular';
+    padding-right: 3.125%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .container .content.bottom {
+    padding-right: 0;
+  }
+}
+
+/* ----- Media Queries: Desktop ----- */
+@media all and (min-width: 1440px) {
+  .about {
+    padding: unset;
+  }
+  .about__header {
+    font-size: 38px;
+    margin: 48px 0 48px 12.5%;
+  }
+  .about__img {
+    height: 450px;
+    width: 62.22%;
+    margin: 0 18.89% 48px 18.9%;
+  }
+  .about__quote {
+    padding: 0 18.9% 40px 18.9%;
+    font-size: 26px;
+  }
+  .about__name {
+    font-size: 18px;
+    line-height: 38px;
+    padding: 0 18.9% 56px 18.9%;
+  }
+  .about__band {
+    font-family: 'AvenirNextBold';
+    font-size: 24px;
+    padding: 0 18.9% 32px 18.9%;
+  }
+  .about .container .content {
+    font-family: 'AvenirNextRegular';
+    padding: 0 20px 48px 18.9%;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .about .container .content.bottom {
+    font-family: 'AvenirNextRegular';
+    padding: 0 18.9% 48px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.gallery {
+  padding: 0 5%;
+  background-color: #e1e1e1;
+}
+
+.gallery__header {
+  font-family: "AvenirNextBold";
+  font-size: 24px;
+  margin: 0;
+  padding: 32px 0 24px 0;
+}
+
+.gallery__photo {
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+/* ----- Media Queries: Tablet ----- */
+@media only screen and (min-width: 768px) {
+  .gallery {
+    padding: 0 3.125%;
+  }
+  .gallery__header {
+    font-size: 32px;
+  }
+  .gallery__photo {
+    width: 29.1667%;
+    height: 126px;
+    padding-bottom: 16px;
+  }
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .gallery {
+    padding: 0 12.5%;
+  }
+  .gallery__header {
+    padding: 48px 0 64px;
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .gallery__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  .gallery__container__photo {
+    width: 31.85%;
+    padding-bottom: 24px;
+    height: 193px;
+  }
+}
+
+.footer {
+  color: #FFFFFF;
+  background-color: #323232;
+  font-family: "AvenirNextBold";
+  padding-left: 5%;
+}
+
+.footer__heading {
+  font-size: 24px;
+  padding: 40px 0 30px 12px;
+}
+
+.footer__social {
+  padding-left: 5%;
+  padding-bottom: 20px;
+}
+
+.footer__social-icon {
+  padding-right: 6.25%;
+}
+
+.footer__social-icon.twitter {
+  padding-left: 6.25%;
+}
+
+.representative {
+  font-family: "AvenirNextMedium";
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 12px;
+  font-weight: bolder;
+}
+
+.representative__address, .representative__email {
+  font-family: "AvenirNextRegular";
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.representative__email {
+  padding-bottom: 18px;
+}
+
+.copyright {
+  font-family: "AvenirNextRegular";
+  font-size: 13px;
+  line-height: 18px;
+  padding: 20px 0 50px 12px;
+}
+
+/* ----- Media Queries: Tablet ----- */
+@media only screen and (min-width: 768px) {
+  .footer__heading {
+    display: inline-block;
+    padding-left: 0;
+    font-size: 30px;
+  }
+  .footer__social {
+    display: inline-block;
+    width: 40%;
+    padding-left: 50px;
+  }
+  .footer__social-icon.twitter {
+    padding-left: 3.91%;
+  }
+  .footer .person-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .person {
+    padding-right: 3.125%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding-left: 12.5%;
+  }
+  .footer__social {
+    display: inline-block;
+    width: 40%;
+    padding-left: 50px;
+  }
+  .footer__social-icon {
+    padding-right: 2.22%;
+  }
+  .footer .person {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
