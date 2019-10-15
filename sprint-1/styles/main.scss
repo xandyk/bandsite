@@ -11,10 +11,10 @@ body {
   box-sizing: inherit;
 }
 
+@import "./partials/breakpoints";
 @import "./partials/colors";
 @import "./partials/fonts";
 @import "./partials/header";
-@import "./partials/footer";
 @import "./partials/hero";
 @import "./partials/about";
 @import "./partials/gallery";
