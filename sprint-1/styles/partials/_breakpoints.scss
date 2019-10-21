@@ -1,6 +1,3 @@
-
-
-// Media queries for tablet size
 @mixin medium {
     @media only screen and (min-width: 768px) {
         @content;

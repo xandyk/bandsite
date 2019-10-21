@@ -51,7 +51,7 @@
 
 /* ----- Media Queries: Tablet */
 
-@media all and (min-width: 768px) {
+@include medium {
     .about {
         padding: 0 3.125%;
 
@@ -102,7 +102,7 @@
 
 /* ----- Media Queries: Desktop ----- */
 
-@media all and (min-width: 1440px) {
+@include large {
     .about {
         padding: unset;
         

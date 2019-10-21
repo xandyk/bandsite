@@ -27,7 +27,7 @@
 
   &__photo {
     width: 29.1667%;
-    height: 126px;
+    height: 87.24vw;
     padding-bottom: 16px;
     }
 
@@ -39,6 +39,8 @@
     }
   }
 }
+
+/* ----- Media Queries: Desktop ----- */
 
 @include large {
     .gallery {
@@ -57,7 +59,7 @@
         &__photo {
             width: 31.85%;
             padding-bottom: 24px;
-            height: 193px;
+            height: 46.53vw;
            }
        }
    }

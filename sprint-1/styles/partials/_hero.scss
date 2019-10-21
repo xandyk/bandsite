@@ -27,12 +27,11 @@
  
 /* ----- Media Queries: Tablet ----- */
 
-@media all and (min-width: 768px) {
+@include medium {
     .hero {
-        // display: flex;
 
         &__image {
-            height: 400px;
+            height: 52.08vw;
         }
 
         &__text {
@@ -46,11 +45,11 @@
 
 /* ----- Media Queries: Desktop */
 
-@media all and (min-width: 1440px) {
+@include large {
      .hero {
 
         &__image {
-            height: 670px;
+            height: 46.53vw;
         }
 
         &__text {

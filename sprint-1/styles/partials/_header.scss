@@ -44,7 +44,7 @@ a {
 
 /* ----- Media Queries: Tablet ----- */
 
-@media all and (min-width: 768px) {
+@include medium {
   .header {
     display: flex;
     
@@ -70,12 +70,9 @@ a {
     }
   }
 
-
-
-
 /* ----- Media Queries: Desktop */
 
-@media all and (min-width: 1440px) {
+@include lage {
   .header {
     // padding-left: 0;
     // padding: 0 12.5%;
