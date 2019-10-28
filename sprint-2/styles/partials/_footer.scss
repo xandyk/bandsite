@@ -1,0 +1,123 @@
+.footer {
+  color: $white;
+  background-color: $black;
+  font-family: "AvenirNextBold";
+  padding: 0 5%;
+
+  &__heading {
+    font-size: 30px;
+    padding: 40px 0 30px 2%;
+    margin: unset;
+  }
+
+  &__logo {
+    display: none;
+  }
+  
+  &__social {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-bottom: 20px;
+  }
+}
+
+.representative {
+  font-family: "AvenirNextMedium";
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 2%;
+  font-weight: bolder;
+
+  &__address,
+  &__email {
+    font-family: "AvenirNextRegular";
+    padding-left: 2%;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__email {
+    padding-bottom: 18px;
+  }
+}
+
+.copyright {
+  display: inline-block;
+  width: 20vw;
+  font-family: "AvenirNextRegular";
+  font-size: 13px;
+  line-height: 18px;
+  padding: 20px 0 50px 2%;
+}
+
+
+/* ----- Media Queries: Tablet ----- */
+
+@include medium {
+  .footer {
+
+    .wrap {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    &__heading {
+      font-size: 30px;
+      padding-left: unset;
+    }
+   
+    &__social {
+      display: inline-block;
+      display: flex;
+      width: 26vw;
+      padding: unset;
+      padding-right: 70px;
+    }
+
+    &__logo {
+      display: unset;
+    }
+ 
+  .person-wrap {
+    display: flex;
+    // align-items: center;
+  }
+
+  .person {
+    display: inline-block;
+    width: 35vw;
+    }
+  }
+
+  .copyright {
+    width: unset;
+    padding: 0 0 40px;
+  }
+}
+
+@include large {
+  .footer {
+    padding: 0 12.5%;
+
+    &__social {
+      display: inline-block;
+      width: 43vw;
+      display: flex;
+      // justify-content: space-between;
+      padding-right: 440px;
+    }
+
+  .person-wrap {
+    width: 70%;
+    }
+
+  .person {
+    display: inline-block;
+    width: 400vw;
+    
+  }
+}
+}

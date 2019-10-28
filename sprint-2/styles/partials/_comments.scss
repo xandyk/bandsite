@@ -1,0 +1,193 @@
+.convo {
+padding: 32px 5%;
+
+    .container {
+        display: flex;
+    }
+
+    &__header {
+        font-family: 'AvenirNextBold';
+        font-size: 24px;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+    }
+
+    &__form {
+        flex: 3;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    input {
+        margin-bottom: 15px;
+        border: 1px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 5px;
+        padding: 8px;
+        }
+    }
+
+    &__label {
+        color: $mercury;
+    }
+
+    &__comment {
+        display: flex;
+        flex-direction: column;
+    }
+
+.name-box {
+    width: 65vw;
+    height: 40px;
+    border-color: 2px solid $black;
+}
+
+.comment-box {
+    margin-bottom: 24px;
+    height: 100px;
+    width: 65vw;
+}
+
+.comment-row {
+        display: flex;
+        margin-top: 20px;
+}
+
+h6 {
+    font-family: 'AvenirNextMedium';
+    padding-bottom: 4px;
+    color: $silver;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: unset;
+    }
+
+}
+
+.avatar-box {
+    flex: 1;
+}
+
+.avatar {
+   width: 20vw;
+   height: 20vw;
+   border-radius: 100vw;
+}
+
+
+.button {
+   background-color:$mercury;
+   width: 20vw;
+   height: 20vw;
+   border-radius: 100vw;
+}
+
+.comment-row {
+    display: flex;
+    padding: 12vw 0;
+    padding-left: 5%;
+    border-top: 1px solid $silver;
+}
+
+.textHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContentDiv {
+    margin-left: 30px;
+    width:65%;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'AvenirNextRegular';
+    font-size: 16px;
+}
+
+.name {
+    font-size: 12px;
+    font-family: 'AvenirNextMedium';
+}
+
+.date {
+    font-family: 'AvenirNextMedium';
+    color: $silver;
+    font-size: 12px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.submit {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    padding: 0 10px;
+    margin: 0 0 32px 0;
+    display: block;
+    height: 48px;
+    width: 65vw;
+    background-color: $black;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+}
+
+
+/* ----- Media Queries: Tablet ----- */
+
+ @include medium { 
+
+.convo {
+    padding: unset;
+
+    &__header {
+    padding-left: 3.125%;
+        }
+
+.container {
+    padding: 0 16.15%;
+}    
+
+.name-box, .comment-box {
+    width: 58.5vw;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.button {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+
+}
+.submit {
+    display: inline-block;
+    width: 18vw;
+    margin-left: 40.5vw;
+    }
+ }
+}
+
+
+
+/* ----- Media Queries: Desktop ----- */
+
+ @include large { 
+    .convo {
+        &__header {
+            margin-top: 40px;
+        }
+
+        .submit {
+        width: 11.11vw;
+        margin-left: 47.4vw;
+        }
+    }
+}
