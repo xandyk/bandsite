@@ -1,0 +1,224 @@
+.convo {
+    padding: 32px 5%;
+
+    .container {
+        display: flex;
+    }
+
+        &__header {
+            font-family: 'AvenirNextBold';
+            font-size: 24px;
+            padding-bottom: 40px;
+            margin-bottom: 0;
+        }   
+
+        &__form {
+            flex: 3;
+        }
+
+    input {
+        margin-bottom: 15px;
+        border: 1px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 5px;
+        padding: 8px;
+    }
+
+    &__label {
+        color: $mercury;
+    }
+
+    &__comment {
+        display: flex;
+        flex-direction: column;
+    }
+
+.name-box {
+    width: 65vw;
+    height: 40px;
+    border-color: 2px solid $black;
+}
+
+.comment-box {
+    margin-bottom: 24px;
+    height: 100px;
+    width: 65vw;
+}
+
+
+#display-comments {
+    margin: 0 5%;
+}
+
+.comment-row {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+h6 {
+    font-family: 'AvenirNextMedium';
+    padding-bottom: 4px;
+    color: $silver;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: unset;
+    }
+
+.avatar-box {
+    flex: 1;
+}
+
+.avatar {
+   width: 20vw;
+   height: 20vw;
+   border-radius: 100vw;
+}
+
+.submit {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    padding: 0 10px;
+    display: block;
+    height: 48px;
+    background-color: $black;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+    }
+}
+
+
+/* ---------- Comment Section ---------- */
+
+.button {
+    margin-top: 24px;
+    background-color:$mercury;
+    width: 200px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.mainContentDiv {
+    padding-left: 10px;
+}
+
+.comment-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.comment-name {
+    font-family: 'AvenirNextMedium';
+    font-size: 15px;
+}
+
+.comment-date {
+    padding-left: 40px;
+    font-family: 'AvenirNextRegular';
+    color: $silver;
+    font-size: 15px;
+}
+
+
+.comment-row {
+    
+    .mainContentDiv {
+        padding-left: 20px;
+    }
+
+    margin-top: 20px;
+    display: flex;
+    margin: 0 5%;
+    font-family: 'AvenirNextRegular';
+    font-size: 14px;
+    border-top: 1px solid $silver; 
+
+    &-heading {
+    font-size: px;
+    display: flex;
+    justify-content: space-around;
+    }
+}
+ 
+p {
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+
+
+/* ---------- Media Queries: Tablet ---------- */
+
+ @include medium { 
+
+#display-comments {
+    margin-top: 40px;
+    padding: 0 16.15%;
+    }
+
+.convo {
+    padding: unset;
+
+    &__header {
+    padding-left: 3.125%;
+    }
+
+    .container {
+    padding: 0 16.15%;
+    }    
+
+    .name-box, .comment-box {
+    width: 58.5vw;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .submit {
+    width: 33%;
+    align-self: flex-end;
+    }
+}
+
+
+.comment-row {
+    margin: 0;
+}
+
+.button {
+    width: 100px;
+}
+}
+
+
+ 
+
+/* ----- Media Queries: Desktop ----- */
+
+ @include large { 
+    .convo {
+        &__header {
+            margin-top: 40px;
+        } 
+
+
+        .submit {
+        width: 25%;
+        align-self: flex-end;
+        }
+    }
+    
+    .button {
+        width: 50px;
+    }
+ }
+
+   
+ 

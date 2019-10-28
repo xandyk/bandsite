@@ -1,0 +1,24 @@
+@import "../styles/partials/breakpoints";
+@import "../styles/partials/colors";
+@import "../styles/partials/fonts";
+@import "../styles/partials/header";
+@import "../styles/partials/hero";
+@import "../styles/partials/about";
+@import "../styles/partials/gallery";
+@import "../styles/partials/comments";
+@import "../styles/partials/shows";
+@import "../styles/partials/footer";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "AvenirNextRegular";
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+

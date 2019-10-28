@@ -1,0 +1,65 @@
+.hero * {
+    margin: 0;
+}
+
+.hero {
+    &__image {
+        background-image: url('../assets/images/hero.jpg');
+        width: 100vw;
+        height: 57.19vw;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        color: $white;
+        font-family: 'AvenirNextBold';
+        font-size: 28px;
+        line-height: 1.5;
+        padding-left: 5%;
+        display: block;
+        width: 278vw;
+    }  
+}
+
+ 
+/* ----- Media Queries: Tablet ----- */
+
+@include medium  {
+    .hero {
+        // display: flex;
+
+        &__image {
+            height: 52.08vw;
+        }
+
+        &__text {
+            font-size: 46px;
+            padding-left: unset;
+            margin-left: 3.125%;
+            width: 55%;
+        }
+    }
+}
+
+/* ----- Media Queries: Desktop */
+
+@include large {
+     .hero {
+
+        &__image {
+            height: 46.53vw;
+        }
+
+        &__text {
+            display: block;
+            width: 40%;
+            padding: unset;
+            font-size: 65px;
+            margin-left: 12.5%;
+        }
+    }
+}
+

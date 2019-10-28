@@ -1,0 +1,313 @@
+.header__shows {
+  background-color: $black;
+  width: 100vw;
+  height: 80px;
+
+   &-image {
+    padding: 15px 0 12.5px 16px;
+    display: block;
+    margin: 0 auto;
+  }
+
+   &-nav-menu {
+    color: $white;
+    margin: unset;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-item-biography {
+      color: $silver;
+      width: 50%;
+      text-align: center;
+    }
+
+    &-item-show {
+      border-bottom: 4px solid $white;
+      padding-bottom: 5px;
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+  
+.shows-primary {
+  color: $silver;
+  text-decoration: none;
+}
+
+/* ----- Hero Section for Shows Page----- */
+ .hero-shows {
+    color: $white;
+    font-family: 'AvenirNextMedium';
+    // font-size:18px;
+    padding: 0;
+
+    
+    &__image {
+    background-image: url('../assets/images/show-hero.jpg');
+    height: 147.75vw;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    position: relative;
+    }
+
+    &__header {
+        font-family: 'AvenirNextMedium';
+        font-weight: bold;
+        margin-left: 0;
+        padding: 64px 0 0 5%;
+    }
+
+    &__text {
+      font-family: 'AvenirNextBold';
+      margin-left: 0;
+      padding: 25px 0 64px 5%;
+      font-size: 24px;
+      line-height: 1.5;
+      width: 90%;
+    }
+
+  iframe {
+  position: absolute;
+  width: 90vw;
+  height: 12vh;
+  top: 88vw;
+  margin: 0 16px;
+  }
+}
+
+
+
+ /* ----- Hero Section for Shows Page ----- */
+
+.shows__container {
+  padding: 5%;  
+}
+
+.shows__heading {
+  font-family: 'AvenirNextBold';
+  font-size: 30px;
+  // margin: 0;
+  // padding: 32px 0 40px 0;
+}
+
+.header-tablet {
+  display: none;
+}
+ 
+.date-key, .venue-key, .location-key, .location-key {
+  color: $silver;
+  font-size: 20px;
+  font-family: 'AvenirNextMedium';
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.date-value {
+  font-family: 'AvenirNextMedium';
+}
+
+.date-value, .location-value, .venue-value {
+  font-size: 18px;
+  padding: 16px 0 32px 0;
+  margin: 0;
+}
+
+.tickets-button {
+  width: 90vw;
+  height: 48px;
+  background-color: $black;
+  color: $white;
+  font-size: 16px;
+  font-family: 'AvenirNextMedium';
+  margin-bottom: 45px;
+  border-radius: 5px;
+  border: none;
+}
+
+.copyright {
+    display: block;
+    width: 180%;
+}
+
+
+
+/* ----- Media Queries: Tablet ----- */
+
+@include medium {
+  .header__shows {
+
+    display: flex;
+    align-items: center;
+    padding: 0 3.125vw;
+
+    &-nav-menu {
+      color: $white;
+      padding-left: 12.5vw;
+      list-style: none;
+
+      &-item-show {
+        padding-left: 8vw;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }  
+  }
+}
+
+.hero-shows {
+
+    &__image {
+      height: 87.2396vw;
+    }
+
+    &__header {
+      font-family: 'AvenirNextMedium';
+      font-size: 26px;
+      font-weight: bold;
+      margin-left: 0;
+      padding: 96px 0 0 5vw;
+    }
+
+    &__text {
+      font-family: 'AvenirNextBold';
+      margin-left: 0;
+      padding: 25px 0 64px 5vw;
+      font-size: 58px;
+      line-height: 1.5;
+      width: 80%;
+    }
+
+    iframe {
+      position: absolute;
+      width: 50vw;
+      height: 13vh;
+      top: 68vw;
+      margin: 0 5vw;
+    }
+}
+
+.date-key, .venue-key, .location-key, .location-key {
+  display: none;
+}
+
+.header-tablet {
+  display: flex;
+  font-size: 10px;
+  color: $silver;
+  width: 57vw;
+  justify-content: space-between;
+}
+
+.shows__info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  border-bottom: 1.5px solid $mercury;
+}
+
+.tickets-button {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17vw;
+  height: 48px;
+  background-color: $black;
+  color: $white;
+  font-size: 14px;
+  font-family: 'AvenirNextMedium';
+  margin-bottom: 45px;
+  border-radius: 5px;
+  border: none;
+}
+
+.venue-value, .location-value {
+  font-family: 'AvenirNextRegular';
+  font-size: 13px;
+  padding-bottom: 0;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-value {
+  padding-bottom: 0;
+  font-size: 14px;
+}
+/* ----- Media Queries: Desktop */
+
+@include large {
+  
+  .header__shows {
+      padding: unset;
+      padding-left: 12.5vw;
+
+      &-nav-menu {
+        margin: unset; 
+      }
+      &-image {
+      padding: unset;
+      }
+  }
+
+  .hero-shows__header {
+    font-size: 22px;
+    padding: unset;
+    margin: 160px 0 48px;
+  }
+
+  .hero-shows__text {
+    margin: unset;
+    padding: unset;
+    font-size: 48px;
+    line-height: 1.5;
+    width: 32vw;
+  }
+  
+  .hero-shows__image {
+    height: 46.53vw;
+    padding: 15px 0 12.5px 12.5VW;
+  }
+
+  .hero-shows iframe {
+    position: absolute;
+    width: 30vw;
+    height: 13.4vh;
+    top: 25.5vw;
+    right: 4vw;
+  }
+
+  .shows__container {
+    padding: 0 12.5vw;
+  }
+
+  .shows__heading {
+    margin-top: 48px;
+    display: block;
+    width: 10vw;
+  }
+
+  .header-tablet {
+    width: 50%;
+  }
+
+
+/* ----- Footer Section for Shows ----- */
+  .footer {
+    padding: unset;
+
+    .copyright {
+        width: 70vw;
+        line-height: 2;
+    }
+}
+}
